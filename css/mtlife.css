@@ -6,32 +6,39 @@ body {
   transition: 0.7s;
 }
 
-*:focus, *:hover {
+*:focus,
+*:hover {
   outline: none !important;
 }
 
 /* 字體 */
-.h1, h1 {
+.h1,
+h1 {
   font-size: 1.43rem !important;
 }
 
-.h2, h2 {
+.h2,
+h2 {
   font-size: 1.32rem !important;
 }
 
-.h3, h3 {
+.h3,
+h3 {
   font-size: 1.125rem !important;
 }
 
-.h4, h4 {
+.h4,
+h4 {
   font-size: 0.937rem !important;
 }
 
-.h5, h5 {
+.h5,
+h5 {
   font-size: 0.812rem !important;
 }
 
-.h6, h6 {
+.h6,
+h6 {
   font-size: 0.625rem !important;
 }
 
@@ -39,44 +46,26 @@ body {
 .title {
   letter-spacing: 1rem;
   position: relative;
+  display: inline-block;
 }
 
 .title:after {
   content: '';
   position: absolute;
-  top: 10px;
-  left: 509px;
-  height: 23px;
-  width: 13%;
-  background-color: rgba(134, 215, 252, 0.5);
 }
 
-@media screen and (max-width: 1200px) {
-  .title:after {
-    left: 422px;
-    width: 14%;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .title:after {
-    left: 419px;
-    width: 15%;
-  }
-}
-
-@media screen and (max-width: 895px) {
-  .title:after {
-    left: 302px;
-    width: 19%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .title:after {
-    left: 210px;
-    width: 27%;
-  }
+.title:before {
+  content: '';
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(19%, #ffbf00), color-stop(40%, #ffffffb1));
+  background-image: linear-gradient(to top, #ffbf00 19%, #ffffffb1 40%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0;
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  z-index: -1;
 }
 
 /* 通用 */
@@ -130,7 +119,7 @@ body {
 }
 
 section {
-  background-color: #c9d9f8;
+  background-color: #c9d9f86c;
 }
 
 /* NAV 導覽列 */
@@ -147,7 +136,8 @@ nav .navbar-brand {
   font-weight: 700;
 }
 
-nav .navbar-nav a, nav .navbar-nav p {
+nav .navbar-nav a,
+nav .navbar-nav p {
   color: #0c2875 !important;
   line-height: calc(46vh / 15);
   text-align: center;
@@ -188,7 +178,8 @@ section#life .swiper-container {
   }
 }
 
-section#life .swiper-container .swiper-button-next, section#life .swiper-container .swiper-button-prev {
+section#life .swiper-container .swiper-button-next,
+section#life .swiper-container .swiper-button-prev {
   width: 30px;
   height: 24px;
 }
@@ -341,23 +332,35 @@ section#life #Modal-booking #booking .booking-form .form-control {
   }
 }
 
-section#life #Modal-booking #booking .booking-form .form-control::-webkit-input-placeholder, section#life #Modal-booking #booking .booking-form .form-control:-ms-input-placeholder, section#life #Modal-booking #booking .booking-form .form-control::-webkit-input-placeholder, section#life #Modal-booking #booking .booking-form input[type="date"].form-control:invalid {
+section#life #Modal-booking #booking .booking-form .form-control::-webkit-input-placeholder,
+section#life #Modal-booking #booking .booking-form .form-control:-ms-input-placeholder,
+section#life #Modal-booking #booking .booking-form .form-control::-webkit-input-placeholder,
+section#life #Modal-booking #booking .booking-form input[type='date'].form-control:invalid {
   color: #b1b6bd;
   font-size: 0.812rem;
   line-height: 65px;
 }
 
-section#life #Modal-booking #booking .booking-form .form-control::-webkit-input-placeholder, section#life #Modal-booking #booking .booking-form .form-control:-ms-input-placeholder, section#life #Modal-booking #booking .booking-form .form-control::placeholder, section#life #Modal-booking #booking .booking-form input[type="date"].form-control:invalid {
+section#life #Modal-booking #booking .booking-form .form-control::-webkit-input-placeholder,
+section#life #Modal-booking #booking .booking-form .form-control:-ms-input-placeholder,
+section#life #Modal-booking #booking .booking-form .form-control::placeholder,
+section#life #Modal-booking #booking .booking-form input[type='date'].form-control:invalid {
   color: #b1b6bd;
   font-size: 0.812rem;
   line-height: 65px;
 }
 
 @media screen and (max-width: 1000px) {
-  section#life #Modal-booking #booking .booking-form .form-control::-webkit-input-placeholder, section#life #Modal-booking #booking .booking-form .form-control:-ms-input-placeholder, section#life #Modal-booking #booking .booking-form .form-control::-webkit-input-placeholder, section#life #Modal-booking #booking .booking-form input[type="date"].form-control:invalid {
+  section#life #Modal-booking #booking .booking-form .form-control::-webkit-input-placeholder,
+  section#life #Modal-booking #booking .booking-form .form-control:-ms-input-placeholder,
+  section#life #Modal-booking #booking .booking-form .form-control::-webkit-input-placeholder,
+  section#life #Modal-booking #booking .booking-form input[type='date'].form-control:invalid {
     line-height: 36px;
   }
-  section#life #Modal-booking #booking .booking-form .form-control::-webkit-input-placeholder, section#life #Modal-booking #booking .booking-form .form-control:-ms-input-placeholder, section#life #Modal-booking #booking .booking-form .form-control::placeholder, section#life #Modal-booking #booking .booking-form input[type="date"].form-control:invalid {
+  section#life #Modal-booking #booking .booking-form .form-control::-webkit-input-placeholder,
+  section#life #Modal-booking #booking .booking-form .form-control:-ms-input-placeholder,
+  section#life #Modal-booking #booking .booking-form .form-control::placeholder,
+  section#life #Modal-booking #booking .booking-form input[type='date'].form-control:invalid {
     line-height: 36px;
   }
 }
@@ -469,7 +472,8 @@ section#life .row div {
   position: relative;
 }
 
-section#life .row div .spanL, section#life .row div .spanR {
+section#life .row div .spanL,
+section#life .row div .spanR {
   position: absolute;
   top: 65px;
   background-color: transparent;
@@ -480,7 +484,8 @@ section#life .row div .spanL, section#life .row div .spanR {
 }
 
 @media screen and (max-width: 991px) {
-  section#life .row div .spanL, section#life .row div .spanR {
+  section#life .row div .spanL,
+  section#life .row div .spanR {
     display: none;
   }
 }
@@ -536,7 +541,8 @@ section#life .row p span {
   }
 }
 
-section#life .row p span:before, section#life .row p span:after {
+section#life .row p span:before,
+section#life .row p span:after {
   content: '';
   /*定位槓槓的位置*/
   position: absolute;
@@ -548,14 +554,16 @@ section#life .row p span:before, section#life .row p span:after {
 }
 
 @media screen and (max-width: 880px) {
-  section#life .row p span:before, section#life .row p span:after {
+  section#life .row p span:before,
+  section#life .row p span:after {
     width: 763%;
     height: 1.3px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  section#life .row p span:before, section#life .row p span:after {
+  section#life .row p span:before,
+  section#life .row p span:after {
     width: 616%;
     height: 1.3px;
   }
@@ -616,7 +624,7 @@ section#news .row .col-4 .r-news {
 section#news .row .col-4 .r-news p {
   margin: 0;
   padding: 0 15px;
-  font-family: 'Franklin Gothic Medium',serif;
+  font-family: 'Franklin Gothic Medium', serif;
   line-height: 35px;
   display: inline-block;
 }
@@ -718,8 +726,8 @@ section#about .col .story-img {
 
 section#about .col .story {
   position: absolute;
-  top: 189px;
-  right: 359px;
+  top: 137px;
+  right: 99px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,7 +759,7 @@ section#about .col .story {
     margin-top: 1.75rem;
   }
   section#about .col .story p {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -847,7 +855,8 @@ section#viewpoint .card .Text .btn {
   color: #fff;
 }
 
-section#viewpoint .swiper-container .swiper-button-next, section#viewpoint .swiper-container .swiper-button-prev {
+section#viewpoint .swiper-container .swiper-button-next,
+section#viewpoint .swiper-container .swiper-button-prev {
   top: unset;
   bottom: 3%;
 }
@@ -1010,4 +1019,3 @@ footer .row .col-md-3 p {
   line-height: 30px;
   margin: 0;
 }
-/*# sourceMappingURL=mtlife.css.map */
